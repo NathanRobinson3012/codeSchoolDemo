@@ -18,6 +18,9 @@ namespace Example
         public Calculator Div(double input) {
             this.Ans/=input; return this;
         }
+        public Calculator Exponent(double input) {
+            this.Ans = Math.Pow(this.Ans,input); return this;
+        }
         public double Read() =>this.Ans;
         public void Print()=>Console.WriteLine(string.Format("Ans currently at: {0}", this.Ans));
     }
