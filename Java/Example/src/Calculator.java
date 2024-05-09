@@ -15,6 +15,9 @@ public class Calculator {
     public Calculator Div(double input) {
         this.Ans/=input; return this;
     }
+    public Calculator Exponent(double input) {
+        this.Ans = Math.pow(this.Ans,input); return this;
+    }
     public double Read(){
         return this.Ans;
     }
