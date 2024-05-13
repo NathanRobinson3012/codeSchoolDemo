@@ -1,3 +1,5 @@
+import sys
+
 class Calculator:
     Ans=None
     
@@ -13,8 +15,10 @@ class Calculator:
     def Multiply(self,input):
         self.Ans*=input
         return self
-    def Div(self,input):
+    def Div(self,input): #ternary = (min = a if a < b else b)
         self.Ans/=input
         return self
+    def Exponent(self,input):
+        return NotImplementedError
     Read=lambda self:self.Ans
     Print=lambda self:print(f"Ans currently at: {self.Ans}")

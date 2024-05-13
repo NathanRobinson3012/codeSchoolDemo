@@ -10,6 +10,7 @@
 
             cal.Add(1).Add(2).Print();
             cal.Multiply(2.5).Print();
+            cal.Exponent(3).Print();
             cal.Sub(1.5).Print();
             cal.Div(0).Print();
         }
