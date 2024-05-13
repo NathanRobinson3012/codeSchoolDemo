@@ -19,6 +19,7 @@ class Calculator:
         self.Ans/=input
         return self
     def Exponent(self,input):
-        return NotImplementedError
+        self.Ans**=input
+        return self
     Read=lambda self:self.Ans
     Print=lambda self:print(f"Ans currently at: {self.Ans}")
